@@ -1,0 +1,54 @@
+{
+  "delivery": {
+    "artifact": "delivery_model.joblib",
+    "training_records": 946,
+    "features": [
+      "features.inventoryAvailableAtCreation",
+      "features.deliveryZone",
+      "features.distanceKm",
+      "features.carrierId",
+      "features.dispatchStatusAtCutoff",
+      "features.hoursToPromisedAtCutoff",
+      "features.installationRequired",
+      "features.installationSlotAvailableAtCutoff",
+      "features.installationSchedulingAtCutoff"
+    ],
+    "target": "deliveryLabel",
+    "classes": [
+      "delayed",
+      "not_delayed"
+    ],
+    "dataset": "synova-synthetic-v1-seed7-1000",
+    "synthetic_data_only": true,
+    "thresholds": {
+      "delivery_delay_hours": 24,
+      "installation_delay_hours_after_delivery": 72
+    }
+  },
+  "installation": {
+    "artifact": "installation_model.joblib",
+    "training_records": 503,
+    "features": [
+      "features.inventoryAvailableAtCreation",
+      "features.deliveryZone",
+      "features.distanceKm",
+      "features.carrierId",
+      "features.dispatchStatusAtCutoff",
+      "features.hoursToPromisedAtCutoff",
+      "features.installationRequired",
+      "features.installationSlotAvailableAtCutoff",
+      "features.installationSchedulingAtCutoff"
+    ],
+    "target": "installationLabel",
+    "classes": [
+      "delayed",
+      "not_delayed"
+    ],
+    "dataset": "synova-synthetic-v1-seed7-1000",
+    "synthetic_data_only": true,
+    "thresholds": {
+      "delivery_delay_hours": 24,
+      "installation_delay_hours_after_delivery": 72
+    }
+  }
+}
